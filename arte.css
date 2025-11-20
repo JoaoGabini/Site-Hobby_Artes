@@ -1,22 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.nav-fundo {
-    background-image: url('img/Navbar.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    min-width: 400px;
-    min-height: fit-content;
+
+@font-face {
+    font-family: Kiwi;
+    src: url(font/KiwiSoda.ttf);
 }
 
-ul{
+nav {
+    width: 100vw;
+    padding: 20px;
+}
+
+body{
+    background-image: url(img/Fundo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    image-rendering: pixelated;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+li a {
+    background-image: url('img/Navbar.png');
+    image-rendering: pixelated;
+    padding: 70px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80px;
+    color: rgb(90, 54, 22);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(92, 84, 42);
+    font-size: 30px;
+    font-family: Kiwi;
+}
+li a:hover{
+    color: rgb(255, 176, 6);
+    text-shadow: 1px 1px 1px rgb(245, 190, 73);
+    transform: scale(1.3);
 }
